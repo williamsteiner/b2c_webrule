@@ -1,0 +1,11 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="owi.customer5.webrule.webrule_services">
+			<EntityType Name="WebRulesType">
+				<Key><PropertyRef Name="RULETYPE"/><PropertyRef Name="RULEID"/><PropertyRef Name="RULENAME"/></Key><Property Name="RULETYPE" Type="Edm.String" Nullable="false" MaxLength="10"/><Property Name="RULEID" Type="Edm.String" Nullable="false" MaxLength="25"/><Property Name="RULENAME" Type="Edm.String" Nullable="false" MaxLength="25"/><Property Name="RULEVALUE" Type="Edm.String" Nullable="false" MaxLength="50"/></EntityType>
+			<EntityContainer Name="webrule_services" m:IsDefaultEntityContainer="true"><EntitySet Name="WebRules" EntityType="owi.customer5.webrule.webrule_services.WebRulesType"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
